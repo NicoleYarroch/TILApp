@@ -1,5 +1,5 @@
 import Vapor
-import FluentSQLite
+import FluentPostgreSQL
 
 final class Acronym: Codable {
     var id: Int? // Set by database where Acronym is saved
@@ -18,7 +18,7 @@ final class Acronym: Codable {
 //    public static var idKey: IDKey = \Acronym.id    // Tells Fluent the key path of the model's ID property
 //}
 
-extension Acronym: SQLiteModel {
+extension Acronym: PostgreSQLModel {
     // “The Fluent packages provide Model helper protocols for each database provider so you don’t have to specify the database or ID types, or the key. ”
 }
 
