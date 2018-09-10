@@ -30,3 +30,7 @@ extension Acronym: Content {
     // Saves data
     // Wrapper around Codable
 }
+
+extension Acronym: Parameter {
+    // Type saftey
+}

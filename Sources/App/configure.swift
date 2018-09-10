@@ -33,6 +33,7 @@ public func configure(
         database: databaseName,
         password: password
     )
+
     let database = PostgreSQLDatabase(config: databaseConfig)
     databases.add(database: database, as: .psql)
     services.register(databases)
